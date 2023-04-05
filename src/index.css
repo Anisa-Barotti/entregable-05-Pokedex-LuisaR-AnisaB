@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*APP.JSX*/
+.app-container {
+  min-width: 100vh;
+  max-width: 100vh;
+}
+
+/*HOME*/
+
+.padre {
+  max-width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgb(151, 7, 31), black);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.instructions {
+  color:antiquewhite;
+  font-size: 11px;
+}
+.img1 {
+  max-width: 60%;
+  height: 100vh;
+  margin-top: 10px;
+  margin-bottom: 9px;
+}
+.img2 {
+  padding: 10px 30px;
+  margin-bottom:0px;
+}
+.img2 img {
+  width: auto;
+  margin-top: 20px;
+}
+.form {
+  margin-bottom: 20px;
+}
+.input1 {
+  height: 45px;
+}
+
+/*POKEDEX.JSX*/
+.pokedex-container {
+ width: 320px;
+ max-width: 1200px;
+}
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.filter_container {
+  max-width: 100%;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.buton-container {
+  display: flex;
+  justify-content: center;
+}
+.title-filter{
+  display: flex;
+  justify-content: center;
+}
+.filter {
+  color: rgb(241, 72, 72);
+  border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -ms-border-radius: 8px 8px 8px 8px;
+  -o-border-radius: 8px 8px 8px 8px;
+  box-shadow: 3px 3px 3px 0px gray;
+}
+.selector {
+  width: 50%;
+  display: flex;
+  border-radius: 8px 0px 0px 8px;
+  -webkit-border-radius: 8px 0px 0px 8px;
+  -moz-border-radius: 8px 0px 0px 8px;
+  -ms-border-radius: 8px 0px 0px 8px;
+  -o-border-radius: 8px 0px 0px 8px;
+  border: black;
+  box-shadow: 3px 3px 3px 0px gray;
+}
+.selector-buton {
+  width: auto;
+  background: linear-gradient(rgb(151, 7, 31), black);
+  text-align: center;
+  color: white;
+  border-radius:0px 8px 8px 0px;
+  -webkit-border-radius:0px 8px 8px 0px;
+  -moz-border-radius:0px 8px 8px 0px;
+  -ms-border-radius:0px 8px 8px 0px;
+  -o-border-radius:0px 8px 8px 0px;
+  box-shadow: 3px 3px 3px 0px gray;
+}
+
+/*POKEMON CARDS  (detalle de cada tarjeta*/
+
+.cars-container {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.cars {
+  width: 235px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(rgb(238, 228, 229), rgb(107, 101, 101));
+  margin-top: 100px;
+  margin-bottom: 35px;
+  padding: 25px;
+  float: left;
+}
+.guys {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.guys-1 {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 18px;
+}
+.guys-2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(62, 92, 10);
+}
+.division {
+  color: darkslategrey;
+}
+.characteristics-container {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.characteristics {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 14px;
+  padding-left: 8px;
+}
+.description {
+  padding-right: 8px;
+  font-size: 8px;
+  display: flex;
+  justify-content:flex-end;
+}
+.img-tipos {
+  width: 900px;
+  margin-top: -90px;
+}
+.clasification {
+  display: flex;
+  justify-content: center;
+}
+.clases {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.detail {
+ width: 200px;
+ font-size: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+/*POKEMON DETAILS*/
+.container_details {
+  height: 93vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  max-width: 1200px;
+}
+.details-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgb(243, 149, 162), rgb(223, 223, 106), rgb(238, 238, 74));
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 50px;
+} 
+.description {
+  width: 200px;
+  font-size: 16px;
+  text-align: center;
+}
