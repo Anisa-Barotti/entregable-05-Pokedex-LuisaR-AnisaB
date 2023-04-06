@@ -35,7 +35,6 @@ const Pokedex = () => {
         <span className="title-welcome text-red-500 font-semibold">Welcome {user}</span>
         here you can find your favorite pokemon.
       </p>
-
       <div className="paginacion text-gray-200 bg-black flex flex-row gap-4">
         {pokemonsPagination.pages.map((page) => (
           <button
@@ -47,7 +46,6 @@ const Pokedex = () => {
           </button>
         ))}
       </div>
-
       <div>
         <Form className='filter-buton'>
           <h3 className="title-filter text-red-500">Filter for search</h3>
@@ -60,7 +58,7 @@ const Pokedex = () => {
                 value={pokemonName}
                 onChange={handleNameChange}
               />
-              <select className='selector' name="pokemon_type" value={pokemonType} onChange={handleTypeChange}>
+              <select className="selector" name="pokemon_type" value={pokemonType} onChange={handleTypeChange}>
                 <option value="">All</option>
                 {types.map((type) => (
                   <option key={type.url} value={type.name}>
@@ -69,14 +67,14 @@ const Pokedex = () => {
                 ))}
               </select>
             </div>
-            <button className='selector-buton p-2' type="submit">Search
+            <button className="selector-buton p-2"type="submit"> Search
+
             </button>
           </div>
         </Form>
       </div>
-
-      <section className='detail'>
-        <div className=''>
+      <section className="detail-pagination">
+        <div className="">
           {pokemonsPagination.listSlice.length ? (
             pokemonsPagination.listSlice.map((pokemon) => (
               <PokemonCard key={pokemon.url} pokemonData={pokemon} />

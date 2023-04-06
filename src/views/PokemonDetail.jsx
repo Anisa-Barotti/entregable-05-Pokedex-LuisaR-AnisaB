@@ -29,8 +29,8 @@ const PokemonDetail = () => {
   }, []);
 
   return (
-    <section className='container_details'>
-      <div className='details-container'>
+    <section className="container_details">
+      <div className="details-container">
       {pokemon && (
         <>
           <h1 className="name text-4xl font-bold text-center">{pokemon.name}</h1>

@@ -59,7 +59,7 @@ const Home = () => {
       </div>
 
       <div className="img1 max-w-full">
-        <img src={'./anime-guiño.png'} alt="" className="imge" />
+        <img src={'./matt-poke.png'} alt="" className="imge" />
       </div>
     </div>
   );
