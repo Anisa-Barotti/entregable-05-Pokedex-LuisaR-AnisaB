@@ -34,8 +34,7 @@ export const usePagination = (itemList, itemQuantityPerPage) => {
     changePageTo(currentPage);
     console.log('hola');
   }, [itemList, itemQuantityPerPage]);
-
-  return {
+return {
     currentPage,
     listSlice,
     pages,

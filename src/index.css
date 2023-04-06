@@ -45,17 +45,39 @@
   height: 40px;
   margin-bottom: 9px;
 }
+/*pokedexLayOut*/
+.log-out {
+  width: 100vh;
+  max-width: 1200px;
+}
 
 /*POKEDEX.JSX*/
 .pokedex-container {
- width: 320px;
- max-width: 1200px;
-}
-.welcome-container {
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.title-welcome {
+  max-width: 90%;
+  font-size: 20px;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.paginacion {
+  width: 100%;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  font-size: 6px;
+  display: flex;
+  justify-content: center;
+  border: solid 1px;
 }
 .filter_container {
   max-width: 100%;
@@ -69,9 +91,12 @@
   display: flex;
   justify-content: center;
 }
-.title-filter{
+.title-filter {
   display: flex;
   justify-content: center;
+  font-size: 18px;
+  color: rgb(245, 168, 168);
+  margin-bottom: 8px;
 }
 .filter {
   color: rgb(241, 72, 72);
@@ -112,7 +137,9 @@
   width: 100vh;
   height: 100vh;
   display: flex;
+  align-items: center;
   justify-content: center;
+  float: left;
 }
 .cars {
   width: 235px;
@@ -141,9 +168,6 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 20px;
   color: rgb(62, 92, 10);
-}
-.division {
-  color: darkslategrey;
 }
 .characteristics-container {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -176,11 +200,11 @@
   justify-content: center;
 }
 .detail {
- width: 200px;
- font-size: 10px;
- display: flex;
- flex-direction: column;
- justify-content: center;
+  width: 200px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*POKEMON DETAILS*/
@@ -220,7 +244,52 @@
 .img_detail {
   width: 90%;
 }
-.description {
+.description-1 {
   font-size: 18px;
   margin-bottom: 30px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 768px) {
+  .log-out {
+    width: 768px;
+  }
+  .pokedex-container {
+    width: 768px;
+  }
+  .title-welcome{
+    font-size: 24px;
+  }
+  .title-filter {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .paginacion {
+    width: 100%;
+    height: 18px;
+    box-shadow: 2px 2px 2px 2px grey;
+    font-size: 6px;
+  }
+}
+@media (min-width: 1024px) {
+  .log-out {
+    width: 1024px;
+  }
+  .pokedex-container {
+    width: 1024px;
+  }
+  .title-welcome{
+    font-size: 30px;
+  }
+  .title-filter {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .paginacion {
+    width: 80%;
+    height: 30px;
+    box-shadow: 2px 2px 2px 2px grey;
+    font-size: 18px;
+  }
 }

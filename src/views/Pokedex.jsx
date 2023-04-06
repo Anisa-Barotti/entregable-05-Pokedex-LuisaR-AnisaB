@@ -30,9 +30,9 @@ const Pokedex = () => {
   }, [type]);
 
   return (
-    <div className="welcome-container w-full p-5 bg-gradient-to-r from-black via-red-900 to-red-700">
+    <div className="pokedex-container w-full p-5 bg-gradient-to-r from-black via-red-900 to-red-700">
       <p className='text-gray-300'>
-        <span className="text-red-500 font-semibold">Welcome {user}, </span>
+        <span className="title-welcome text-red-500 font-semibold">Welcome {user}</span>
         here you can find your favorite pokemon.
       </p>
 

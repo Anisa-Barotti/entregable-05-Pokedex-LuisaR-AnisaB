@@ -5,10 +5,9 @@ import { UserContext } from '../contexts/UserContext';
 const PokedexLayout = () => {
   const { removeUser } = useContext(UserContext);
   return (
-    <div className='
-    background-log-out bg-gradient-to-r from-black via-red-900 to-red-700'>
+    <div className='log-out background-log-out bg-gradient-to-r from-black via-red-900 to-red-700'>
       <button
-        className='"bg-red-500 text-white p-2 hover:bg-red-400 rounded'
+        className='btn-log-out text-white p-2 hover:bg-red-400 rounded'
         onClick={removeUser}
       >
         Log out

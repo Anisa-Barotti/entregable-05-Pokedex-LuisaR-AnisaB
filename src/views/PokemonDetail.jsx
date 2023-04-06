@@ -42,7 +42,7 @@ const PokemonDetail = () => {
           </div>
         </>
       )}
-      <p className='description'>The id of the selected pokemon is: {id}</p>
+      <p className='description-1'>The id of the selected pokemon is: {id}</p>
     </div>
     </section>
   );
