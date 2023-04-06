@@ -36,7 +36,7 @@ const Pokedex = () => {
         here you can find your favorite pokemon.
       </p>
 
-      <div className=" text-gray-200 flex flex-row gap-1">
+      <div className="paginacion text-gray-200 bg-black flex flex-row gap-4">
         {pokemonsPagination.pages.map((page) => (
           <button
             key={page}

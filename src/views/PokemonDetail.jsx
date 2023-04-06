@@ -33,9 +33,9 @@ const PokemonDetail = () => {
       <div className='details-container'>
       {pokemon && (
         <>
-          <h1 className="text-4xl font-bold text-center">{pokemon.name}</h1>
+          <h1 className="name text-4xl font-bold text-center">{pokemon.name}</h1>
           <div className="flex flex-row justify-center">
-            <img
+            <img className='img_detail'
               src={pokemon?.sprites.other['official-artwork'].front_default}
               alt={pokemon.name}
             />
