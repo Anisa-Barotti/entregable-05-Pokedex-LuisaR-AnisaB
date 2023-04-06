@@ -49,7 +49,7 @@ const Home = () => {
           />
           <button
             type="submit"
-            className="bg-gradient-to-r from-red-700 to-red-500 p-2 rounded-lg shadow-md hover:text-white hover:scale-90 hover:bg-red-700 font-medium text-gray"
+            className="btn-start bg-gradient-to-r from-red-700 to-red-500 p-2 rounded-lg shadow-md hover:text-white hover:scale-90 hover:bg-red-700 font-medium text-gray"
           >
             Start
           </button>
